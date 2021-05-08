@@ -1,1 +1,15 @@
 /* styles every color generator with size and flex box to set next to each other */
+.container{
+display: flex;
+flex-direction: column;
+}
+
+.secondContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.secondContainer button{
+    color: white;
+   background-color: orange;
+}
