@@ -1,9 +1,14 @@
 /* styles every color generator with size and flex box to set next to each other */
 .container{
-display: flex;
-flex-direction: column;
-}
+    display: flex;
+    flex-direction: column;
+    }
+.paletts-container{
+    display: flex;
+    flex-direction: row;
+   
 
+}
 .secondContainer{
     display: flex;
     flex-direction: row;
@@ -13,3 +18,16 @@ flex-direction: column;
     color: white;
    background-color: orange;
 }
+.generatedcolor{
+    width:20%;
+    height: 600px;  
+
+}
+
+span {
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: monospace;
+  }
