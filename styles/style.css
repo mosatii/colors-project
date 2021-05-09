@@ -23,15 +23,8 @@
     height: 600px;  
 
 }
-
-span {
-    display: block;
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: normal;
-    font-family: monospace;
-  } */
-
+*/
+/* Styling the pallete div and the button div  */
   * {
     margin: 0;
     padding: 0;
@@ -77,7 +70,7 @@ span {
     color: rgb(49, 44, 44);
     padding: 5px;
     border: none;
-    width: 50px; 
+    width: 80px; 
     height: auto;
   }
   
@@ -93,6 +86,88 @@ span {
     height: 75%;
     align-items: center;
   }
+/* styling the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  text-align: center;
+  margin: 10% auto;
+  width: 50%;
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.modal-header {
+  background: rgb(102, 85, 173);
+  padding: 30px;
+  color: #fff;
+ 
+}
+
+.modal-body {
+  padding: 10px 20px;
+  background: #fff;
+}
+
+
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  color: #fff;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+#palettetext{
+    height: 30px;
+    border: 2px solid balck;
+    font-size: medium;
+}
+
+
+
+#save{
+    background-color: rgb(47, 26, 141);
+    color: white; 
+    font-size: 14px;
+    width: 60px;
+    height: 30px; 
+    border: none;
+    border-radius: 5px;
+}
+#save:hover{
+    background-color: rgb(87, 82, 109);
+    color:rgb(255, 255, 255)
+}
+
   
   
   

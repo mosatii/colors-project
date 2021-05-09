@@ -13,25 +13,44 @@
     
    
     <div class="colorize">
-      <div id="pallete" class="color">#3056ff</div>
-      <div id="pallete2" class="color">#ff3033</div>
-      <div id="pallete3" class="color">#2989d8</div>
-      <div id="pallete4" class="color">#2989g7</div>
+      <div id="pallete" class="color">#3056ff  <i id="icon1" onclick="change('icon1')" class="fa fa-unlock" aria hidden="true"></i></div>
+     
+      <div id="pallete2" class="color">#ff3033 <i id="icon2" onclick="change('icon2')" class="fa fa-unlock" aria hidden="true"></i></div>
+      <div id="pallete3" class="color">#2989d8 <i id="icon3" onclick="change('icon3')" class="fa fa-unlock" aria hidden="true"></i></div>
+      <div id="pallete4" class="color">#2989g7 <i id="icon4" onclick="change('icon4')" class="fa fa-unlock" aria hidden="true"></i></div>
     </div>
+    <!-- Step 2: create three buttons bellow the Palette the buttons has icons -->
     <div class="container">
       <h1>Random Color Generator</h1><br>
       <div> 
-        <button id="btngenerate" type="submit" onclick="randomColor()"><i class="fa fa-recycle"></i></button>
-        <button id="" type="submit"><i class="fa fa-bookmark"></i></button>
-        <button id="" type="submit" ><i class="fa fa-save"></i></button>
-     
+        <button id="btngenerate" type="submit" onclick="randomColor()"><i class="fa fa-recycle"></i> <br>Generate</button>
+        <button id="" type="submit"><i class="fa fa-bookmark"></i><br>Bookmark</button>
+        <button id="modal-btn" class="button" type="submit" ><i class="fa fa-save"></i><br>Save</button>
+      
         
       </div>
     </div>
-    <!-- Step 2: create three buttons bellow the Palette the buttons has icons -->
-    <!-- pop up message for the save button -->
-    <!-- pop up message for the library -->
     
+    <!-- pop up message for the save button -->
+
+    <!--   fixing the Modal -->
+    
+
+  <div id="my-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <h2>Give a name to your pallete</h2><br>
+      <input type="text" id="palettetext"><br><br>
+      <input type="submit" value="Save" id="save">
+      </div>
+      </div>
+      </div>
+
+    <!-- pop up message for the library -->
+    <div id="IsOutput"></div>   
     <script src="./scripts/script.js"></script>
   </body>
 </html>

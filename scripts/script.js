@@ -18,6 +18,56 @@ function randomColor() {
   body.style.background = `linear-gradient(to right, #${randomize} 0%, #${randomize} 25%, #${randomize2} 25%, #${randomize2} 50%, #${randomize3} 50%, #${randomize3} 80%,#${randomize4} 80%, #${randomize4} 100%)`;
 }
 
+// Get DOM Elements
+const modal = document.querySelector('#my-modal');
+const modalBtn = document.querySelector('#modal-btn');
+const closeBtn = document.querySelector('.close');
+
+// Events
+modalBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', outsideClick);
+
+// Open
+function openModal() {
+  modal.style.display = 'block';
+}
+
+// Close
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+// Close If Outside Click
+function outsideClick(e) {
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
+}
+//icon changing 
+function change (iconID){
+  if(document.getElementById(iconID).className=="fa fa-lock"){
+    document.getElementById(iconID).className = "fa fa-unlock";
+  }else{
+    document.getElementById(iconID).className = "fa fa-lock";
+  }
+}
+//Saving our data 
+const inpKey = document.getElementById("palettetext");
+const save = document.getElementById("save");
+const IsOutput = document.getElementById("IsOutput");
+
+save.onclick = function(){
+  const Pcolor1 =  ;
+  
+  const key = inpKey.value;
+  console.log(Pcolor1);
+
+
+  console.log(key);
+
+
+} 
 // function getColor() {
 //   return (
 //     "#" +
