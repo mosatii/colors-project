@@ -10,29 +10,24 @@
   </head>
   <body>
     <!-- step 1: we are going to create a div that contans the Palette  -->
-    <div class="container">
-    <div class="paletts-container">
-      <div class="generatedcolor" id="color1"></div>
-      <span id="color"></span>
-      <div class="generatedcolor" id="color2"></div>
-      <span id="color"></span>
-      <div class="generatedcolor" id="color3"></div>
-      <span id="color"></span>
-      <div class="generatedcolor" id="color4"></div>
-      <span id="color"></span>
-      <div class="generatedcolor" id="color5"></div>
-      <span id="color"></span>
-      
-    </div>
-    <div class="secondContainer"> 
-      <button id="btngenerate" type="submit"><i class="fa fa-recycle"></i></button>
-      <button id="" type="submit"><i class="fa fa-bookmark"></i></button>
-      <button id="" type="submit"><i class="fa fa-save"></i></button>
+    
    
-      
+    <div class="colorize">
+      <div id="pallete" class="color">#3056ff</div>
+      <div id="pallete2" class="color">#ff3033</div>
+      <div id="pallete3" class="color">#2989d8</div>
+      <div id="pallete4" class="color">#2989g7</div>
     </div>
-
-  </div>
+    <div class="container">
+      <h1>Random Color Generator</h1><br>
+      <div> 
+        <button id="btngenerate" type="submit" onclick="randomColor()"><i class="fa fa-recycle"></i></button>
+        <button id="" type="submit"><i class="fa fa-bookmark"></i></button>
+        <button id="" type="submit" ><i class="fa fa-save"></i></button>
+     
+        
+      </div>
+    </div>
     <!-- Step 2: create three buttons bellow the Palette the buttons has icons -->
     <!-- pop up message for the save button -->
     <!-- pop up message for the library -->
