@@ -16,6 +16,7 @@ function randomColor() {
   pallete3.innerHTML = `#${randomize}`;
   pallete4.innerHTML = `#${randomize}`;
   body.style.background = `linear-gradient(to right, #${randomize} 0%, #${randomize} 25%, #${randomize2} 25%, #${randomize2} 50%, #${randomize3} 50%, #${randomize3} 80%,#${randomize4} 80%, #${randomize4} 100%)`;
+
 }
 
 // Get DOM Elements
@@ -52,22 +53,59 @@ function change (iconID){
     document.getElementById(iconID).className = "fa fa-lock";
   }
 }
-//Saving our data 
-const inpKey = document.getElementById("palettetext");
-const save = document.getElementById("save");
-const IsOutput = document.getElementById("IsOutput");
 
-save.onclick = function(){
-  const Pcolor1 =  ;
+//Create class that will save the pallete in an array(UserColor)
+//
+
+class Wallet {
+  constructor(name, currency, balance, description=""){
+      this.name=name
+      this.currency=currency
+      this.balance=balance
+      this.description=description
+      this.transactions =[]
+  }
+  addTransaction(transaction){
+      this.transactions.push(transaction)
+  }
+
+}
+class UserColors{
+  constructor(){
+    this.colors=[]
   
-  const key = inpKey.value;
-  console.log(Pcolor1);
+    
+  }
+  addUserColor(title, color1, color2, color3, color4 ) {
+    let colorGroup= {title, color1, color2, color3, color4};
+    this.colors.push(colorGroup)
+    return this.colors
+  
+  }
+
+}
+
+let libPart = new UserColors()
+let colorArr = libPart.addUserColor("Mousa Colors", "12345","12345","12345","12345")
+ colorArr = libPart.addUserColor("Mousa Colors", "12345","12345","12345","12345")
+ colorArr = libPart.addUserColor("Mousa Colors", "12345","12345","12345","12345")
+console.log(colorArr);
+//Saving our data 
+// const inpKey = document.getElementById("palettetext");
+// const save = document.getElementById("save");
+// const IsOutput = document.getElementById("IsOutput");
+
+// save.onclick = function(){
+//   const Pcolor1 =  ;
+  
+//   const key = inpKey.value;
+//   console.log(Pcolor1);
 
 
-  console.log(key);
+//   console.log(key);
 
 
-} 
+// } 
 // function getColor() {
 //   return (
 //     "#" +
