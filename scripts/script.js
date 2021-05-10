@@ -57,19 +57,17 @@ function change (iconID){
 //Create class that will save the pallete in an array(UserColor)
 //
 
-class Wallet {
-  constructor(name, currency, balance, description=""){
-      this.name=name
-      this.currency=currency
-      this.balance=balance
-      this.description=description
-      this.transactions =[]
-  }
-  addTransaction(transaction){
-      this.transactions.push(transaction)
-  }
 
-}
+
+
+
+
+
+
+
+
+
+
 class UserColors{
   constructor(){
     this.colors=[]
@@ -84,12 +82,13 @@ class UserColors{
   }
 
 }
-
 let libPart = new UserColors()
+
 let colorArr = libPart.addUserColor("Mousa Colors", "12345","12345","12345","12345")
  colorArr = libPart.addUserColor("Mousa Colors", "12345","12345","12345","12345")
  colorArr = libPart.addUserColor("Mousa Colors", "12345","12345","12345","12345")
 console.log(colorArr);
+
 //Saving our data 
 // const inpKey = document.getElementById("palettetext");
 // const save = document.getElementById("save");
